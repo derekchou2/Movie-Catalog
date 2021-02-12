@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+}
+
+
+.main-container {
+    display: block;
+    text-align: left;
+    height: 50%;
+    width: 75%;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+.form-container {
+    display: block;
+    padding: 2em;
+}
+
+#popcorn-pic {
+    height: 200px;
+    width: 200px;
+    float: right;
+}
