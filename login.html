@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div id = "login" class = "main-container">
+        <!--inline centering-->
+        <h1 style = "text-align: center;">Register to view our movie catalog</h1>
+
+        <div id = "form-container" class = "form-container">
+            <form id = "form">
+                <label for = "name" >Name:</label>
+                <input type = "text" id = "name" required>
+
+                <label  for = "email" required>Email:</label>
+                <!--regex in pattern for email validation-->
+                <input type = "email" id = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <br/>
+                <img id = "popcorn-pic" src = "./popcorn.jpg"/>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+
+                <input type = "submit" onClick = "seeMovies()"/>
+
+
+
+
+            </form>
+        </div>
+
+
+    </div>
+</body>
+</html>
+
+<script>
+    function validateForm() {
+        //validate form is complete
+        var regex = document.getElementById("email").pattern;
+        if (document.getElementById("email").value == "d") {
+            console.log("boo");
+        }
+    }
+
+
+    function seeMovies() {
+        
+        window.location.href = "./movies.html";
+    }
+
+    validateForm();
+</script>
