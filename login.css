@@ -1,7 +1,8 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     text-align: center;
+    background-color: #AFD275;
 }
 
 label {
@@ -15,7 +16,7 @@ label {
     height: 50%;
     width: 75%;
     margin: 0 auto;
-    background-color: lightgray;
+    background-color: #C2CAD0;
 }
 
 .form-container {
@@ -27,4 +28,15 @@ label {
     height: 200px;
     width: 200px;
     float: right;
+    position: relative;
+    bottom: 115px;
+}
+
+#submit {
+    position: relative;
+    top: 30px;
+}
+
+#name, #email, #gender, #dob {
+    margin: .3em .15em;
 }
