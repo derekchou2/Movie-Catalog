@@ -63,6 +63,7 @@ main div{
     background: #C3073F;
     position:relative;
 }
+
 img{
     width: 100%;
     height: 89%;
@@ -81,12 +82,21 @@ img{
     opacity: 0.15;
 }
 
-.movie-box:hover p {
-    opacity: 1;
+.movie-box:hover button {
+    z-index: 2;
 }
 
-.movie-box:hover h2 {
-    opacity: .15;
+.movie-box > p {
+    opacity: 0;
+    position: absolute;
+    transition: .3s ease;
+    padding: 15px;
+    color: #fff;
+}
+
+.movie-box:hover p {
+    opacity: .99;
+    z-index: 1
 }
 
 h2{
@@ -97,11 +107,41 @@ h2{
     color: #fff;
 }
 
-
-.movie-box > p {
-    opacity: 0;
-    position: absolute;
-    transition: .3s ease;
-    padding: 15px;
-    color: #fff;
+.movie-box:hover h2 {
+    opacity: .15;
 }
+
+#watch-button {
+    position: absolute;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    width: 30px;
+    background-color: #555555;
+    opacity: .1;
+}
+
+#watch-button:hover {
+    opacity: 1;
+}
+
+#fav-button {
+    position: absolute;
+    border-radius: 8px;
+    border: none;
+    top: 35px;
+    height: 30px;
+    width: 30px;
+    background-color: #555555;
+    color: yellow;
+    opacity: .1;
+}
+
+#fav-button:hover {
+    opacity: 1;
+}
+
+
+
+
+

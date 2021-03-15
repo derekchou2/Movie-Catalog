@@ -21,12 +21,22 @@ function showMovies(url){
         const title = document.createElement('h2');
         const description = document.createElement('p');
 
+        const favButton = document.createElement('button');
+        favButton.id = "fav-button";
+        favButton.innerHTML = "<i class=\"fas fa-star\"></i>"
+        const watchButton = document.createElement('button');
+        watchButton.id = "watch-button";
+        watchButton.innerHTML = "<i class=\"fas fa-eye\"></i>"
+
         title.innerHTML = element.title;
         description.innerHTML = element.overview;
         image.src = IMGPATH + element.poster_path;
+        el.appendChild(favButton);
+        el.appendChild(watchButton);
         el.appendChild(description);
         el.appendChild(image);
         el.appendChild(title);
+        
         
         main.appendChild(el);
     }); 
