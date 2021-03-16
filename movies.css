@@ -18,6 +18,10 @@ header{
     justify-content: flex-start;
     border-bottom: 1px solid #ccc;
 }
+
+.header-item {
+    padding: 1em;
+}
 header h1{
     margin: 0 20px;
     color: white;
@@ -33,7 +37,7 @@ header a h1:hover, header a h2:hover {
 #log-out {
     color: white;
     position: relative;
-    left: 400px;
+    left: 240px;
 }
 
 header form{
