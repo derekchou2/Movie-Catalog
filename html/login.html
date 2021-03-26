@@ -8,18 +8,18 @@
 <body>
     <div id = "register" class = "main-container">
         <!--inline centering-->
-        <h1 style = "text-align: center;">Register to view our movie catalog</h1>
+        <h1>Register to view our movie catalog</h1>
 
-        <div id = "form-container" class = "form-container">
+        <div class = "form-container">
             <!--Form has 2 uses, validating emails as well as taking user to landing page once fields are completed and user is "registered"-->
-            <form id = "form" action="./movies.html">
+            <form id = "register-form" action="./movies.html">
                 <label for = "name" >Name:</label>
                 <input type = "text" id = "name" required>
 
                 <label  for = "email">Email:</label>
                 <!--regex in pattern for email validation-->
                 <input type = "email" id = "email" name = "email"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                
+
                 <label  for = "pwd">Pwd: (min 8 chars, 1 letter, 1 num)</label>
                 <!--regex in pattern for password validation-->
                 <input type = "password" id = "pwd" name = "pwd" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
@@ -37,7 +37,7 @@
                 <input type = "date" id = dob required>
                 <br>
 
-                <input  id = "register" type = "submit" value = "register"/>
+                <input  id = "register-button" type = "submit" value = "register"/>
 
 
 
@@ -45,28 +45,27 @@
             </form>
         </div>
 
+        <h1 id = "login-header">Login if you already have an account</h1>
+
+        <div class = "form-container">
+          <form id = "login-form" action="./movies.html">
+
+            <label  for = "email">Email:</label>
+            <!--regex in pattern for email validation-->
+            <input type = "email" id = "email" name = "email"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+            <label  for = "pwd">Pwd:</label>
+            <!--regex in pattern for password validation-->
+            <input type = "password" id = "pwd" name = "pwd">
+            <br/>  
+
+            <input  id = "login-button" type = "submit" value = "Login"/>
+          </form>
+        </div>
+
 
     </div>
 
-    <!--Subscription Fee Table-->
-    <table>
-        <tr>
-          <th>Subscription Type</th>
-          <th>Features</th>
-        </tr>
-        <tr>
-          <td>Free</td>
-          <td>1 movie/month</td>
-        </tr>
-        <tr>
-          <td>$9.99/month</td>
-          <td>5 movies/month</td>
-        </tr>
-        <tr>
-            <td>$19.99/month</td>
-            <td>Unlimited Movies</td>
-          </tr>
-      </table>
       
 </body>
 </html>
