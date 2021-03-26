@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <div id = "login" class = "main-container">
+    <div id = "register" class = "main-container">
         <!--inline centering-->
         <h1 style = "text-align: center;">Register to view our movie catalog</h1>
 
@@ -18,7 +18,11 @@
 
                 <label  for = "email">Email:</label>
                 <!--regex in pattern for email validation-->
-                <input type = "email" id = "email"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input type = "email" id = "email" name = "email"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                
+                <label  for = "pwd">Pwd: (min 8 chars, 1 letter, 1 num)</label>
+                <!--regex in pattern for password validation-->
+                <input type = "password" id = "pwd" name = "pwd" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
                 <br/>
                 <img id = "popcorn-pic" src = "../images/popcorn.jpg"/>
 
@@ -33,7 +37,7 @@
                 <input type = "date" id = dob required>
                 <br>
 
-                <input  id = "submit" type = "submit"/>
+                <input  id = "register" type = "submit" value = "register"/>
 
 
 
