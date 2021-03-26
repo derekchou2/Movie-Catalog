@@ -52,11 +52,11 @@
 
             <label  for = "email">Email:</label>
             <!--regex in pattern for email validation-->
-            <input type = "email" id = "email" name = "email"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <input type = "email" id = "email" name = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 
             <label  for = "pwd">Pwd:</label>
             <!--regex in pattern for password validation-->
-            <input type = "password" id = "pwd" name = "pwd">
+            <input type = "password" id = "pwd" name = "pwd" required>
             <br/>  
 
             <input  id = "login-button" type = "submit" value = "Login"/>
