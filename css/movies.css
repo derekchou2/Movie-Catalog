@@ -86,7 +86,7 @@ img{
     opacity: 0.15;
 }
 
-.movie-box:hover button {
+.movie-box:hover a {
     z-index: 2;
 }
 
@@ -116,6 +116,9 @@ h2{
 }
 
 #watch-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     border: none;
     border-radius: 8px;
@@ -130,6 +133,9 @@ h2{
 }
 
 #fav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     border-radius: 8px;
     border: none;

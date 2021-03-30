@@ -21,10 +21,10 @@ function showMovies(url){
         const title = document.createElement('h2');
         const description = document.createElement('p');
 
-        const favButton = document.createElement('button');
+        const favButton = document.createElement('a');
         favButton.id = "fav-button";
         favButton.innerHTML = "<i class=\"fas fa-star\"></i>"
-        const watchButton = document.createElement('button');
+        const watchButton = document.createElement('a');
         watchButton.id = "watch-button";
         watchButton.innerHTML = "<i class=\"fas fa-eye\"></i>"
 
